@@ -12,7 +12,7 @@ A liveness probe is used to determine if a container is running properly. It che
 Both readiness probes and liveness probes are defined in the Pod's configuration file or deployment manifest.
 
 Here is an example of how to define readiness and liveness probes in a Kubernates deployment. 
-
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:

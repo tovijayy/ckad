@@ -38,7 +38,7 @@ spec:
             port: 8080
           initialDelaySeconds: 15
           periodSeconds: 10
-
+```
 In the above example, the readiness probe and liveness probe are defined using HTTP GET requests to the /health endpoint on port 8080. The readiness probe starts after an initial delay of 10 seconds and checks every 5 seconds. The liveness probe starts after an initial delay of 15 seconds and checks every 10 seconds.
 
 By configuring readiness and liveness probes, you can ensure that only healthy containers receive traffic and that unhealthy containers are automatically restarted by Kubernetes. This helps to maintain the availability and stability of your applications running in Kubernetes.

@@ -1,0 +1,5 @@
+In Kubernetes, a Persistent Volume (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using a storage class. It is a way to abstract the underlying physical storage from the application that uses it. PVs are independent of any Pod that uses them and can exist beyond the lifetime of any Pod.
+
+A Persistent Volume Claim (PVC) is a request for a specific amount of storage by a Pod. It is used by the Pod to obtain a PV of a particular size, access mode, and storage class. PVCs consume and manage the resources of PVs. Once a PVC is created, the Kubernetes control plane searches for a PV that satisfies the requirements specified in the claim.
+
+Using PVs and PVCs, Kubernetes provides a way to manage the storage needs of applications running on the cluster. The application can make use of storage volumes without having to worry about the underlying details of the storage infrastructure. This allows for greater flexibility and portability of applications across different Kubernetes environments.
